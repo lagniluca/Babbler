@@ -1,0 +1,1 @@
+curl --header "nickname: luca" http://localhost:8080/Babbler/ws/babbles/location/Milano
