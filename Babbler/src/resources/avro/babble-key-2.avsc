@@ -1,0 +1,9 @@
+{
+    "type" : "record",
+    "namespace" : "com.babbler.ws.io.avro.model",
+    "name" : "BabbleKey2",
+    "doc" : "Avro schema used for representing a babble on Kafka",
+    "fields" : [
+        {"name" : "keyword", "type" : "string", "doc" : "keyword that identify the partition for the babble"}
+    ]
+}

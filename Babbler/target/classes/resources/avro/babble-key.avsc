@@ -1,0 +1,11 @@
+{
+    "type" : "record",
+    "namespace" : "com.babbler.ws.io.avro.model",
+    "name" : "BabbleKey",
+    "doc" : "Avro schema used for representing a babble on Kafka",
+    "fields" : [
+        {"name" : "location", "type" : "string", "doc" : "location of the babble"},
+        {"name" : "tags", "type" :{"type" : "array", "items" : "string"}, "default" : []},
+        {"name" : "mentions", "type" : {"type" : "array", "items" : "string"} , "default" : []}
+    ]
+}

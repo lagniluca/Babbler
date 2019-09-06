@@ -1,0 +1,14 @@
+{
+    "type" : "record",
+    "namespace" : "com.babbler.ws.io.avro.model",
+    "name" : "BabbleValue",
+    "doc" : "Avro schema used for representing a babble on Kafka",
+    "fields" : [
+        {"name" : "author", "type" : "string", "doc" : "authot of the babble"},
+        {"name" : "content", "type" : "string", "doc" : "content of the babble"},
+        {"name" : "timestamp", "type" : "string", "doc" : "timestamp of the babble provided by the user"},
+        {"name" : "location", "type" : "string", "doc" : "location of the babble"},
+        {"name" : "tags", "type" :{"type" : "array", "items" : "string"}, "default" : []},
+        {"name" : "mentions", "type" : {"type" : "array", "items" : "string"} , "default" : []}
+    ]
+}
